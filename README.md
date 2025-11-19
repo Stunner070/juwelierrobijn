@@ -7,14 +7,25 @@ Een moderne en elegante website voor Juwelier Robijn, compleet vernieuwd met ges
 ```
 juwelierrobijn/
 │
-├── index.html          # Homepage
-├── reparatie.html      # Reparatie diensten pagina
-├── sieraden.html       # Sieraden collectie pagina
-├── contact.html        # Contact pagina
-├── faq.html            # Veelgestelde vragen pagina
-├── styles.css          # Alle styling
-├── script.js           # Alle JavaScript functionaliteit
-└── README.md           # Deze file
+├── index.html                 # Homepage (root - voor GitHub Pages)
+├── CNAME                      # Custom domain configuratie
+├── GITHUB_PAGES_SETUP.md      # Hosting instructies
+├── README.md                  # Deze file
+│
+├── pages/                     # Overige paginas
+│   ├── reparatie.html        # Reparatie diensten pagina
+│   ├── sieraden.html         # Sieraden collectie pagina
+│   ├── contact.html          # Contact pagina
+│   ├── faq.html              # Veelgestelde vragen pagina
+│   └── index.html            # Originele homepage (backup)
+│
+├── style/
+│   └── styles.css            # Alle styling
+│
+├── src/
+│   └── script.js             # Alle JavaScript functionaliteit
+│
+└── images/                   # Afbeeldingen en logo's
 ```
 
 ## 🎨 Design Kenmerken
@@ -73,6 +84,8 @@ juwelierrobijn/
 
 ## 🚀 Hoe Te Gebruiken
 
+### Lokaal Testen
+
 1. **Open de website**:
    - Open `index.html` in een webbrowser
    - Of gebruik een lokale server voor beste resultaten
@@ -90,6 +103,21 @@ juwelierrobijn/
 4. **Kleuren aanpassen**:
    - Open `styles.css`
    - Pas de CSS variables aan onder `:root`
+
+### 🌐 Website Hosten op GitHub Pages met Custom Domain
+
+Deze website is klaar om gehost te worden op GitHub Pages met uw eigen domeinnaam!
+
+**📖 Zie `GITHUB_PAGES_SETUP.md` voor complete instructies**
+
+**Snelle Start:**
+1. Activeer GitHub Pages in repository Settings > Pages
+2. Update het `CNAME` bestand met uw domeinnaam
+3. Configureer DNS records bij uw domain provider
+4. Wacht op DNS propagatie (1-48 uur)
+5. Activeer HTTPS voor beveiligde verbinding
+
+De website wordt automatisch gebouwd en geüpdatet bij elke push naar de main branch!
 
 ## ✨ JavaScript Functionaliteiten
 
