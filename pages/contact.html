@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Juwelier Robijn">
+    <title>Contact - Juwelier Robijn</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        .contact-info-card {
+            background: var(--light-color);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-info-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+        .contact-form {
+            background: var(--light-color);
+            padding: 3rem;
+            border-radius: 20px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-family: var(--font-secondary);
+            transition: var(--transition);
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        #form-message {
+            animation: slideIn 0.5s ease;
+        }
+        #form-message i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .contact-info .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .contact-info .social-links a {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info .social-links a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/jr logo.jpg" alt="Juwelier Robijn Logo">
+                    <span>Juwelier Robijn</span>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reparatie.html">Reparatie</a></li>
+                <li><a href="sieraden.html">Sieraden</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>We staan voor u klaar</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contactgegevens</h2>
+                    <p style="margin-bottom: 2rem;">Neem gerust contact met ons op voor vragen of het maken van een afspraak.</p>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:juwelier.robijn@gmail.com">juwelier.robijn@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Social Media</h3>
+                            <p>Volg ons op Instagram, TikTok, Facebook en YouTube</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Openingstijden</h3>
+                            <p>Neem contact op voor actuele openingstijden</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="https://instagram.com/juwelier.robijn" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/juwelierrobijn" target="_blank" aria-label="Snapchat">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                        <a href="https://tiktok.com/@juwelier.robijn.s" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/juwelier.robijn.3" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://youtube.com/@juwelierrobijn3081" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 style="margin-bottom: 1.5rem;">Stuur Ons Een Bericht</h2>
+                    <div id="form-message" style="display: none; padding: 1rem; margin-bottom: 1.5rem; border-radius: 10px; text-align: center;"></div>
+                    <form id="contact-form" action="https://formsubmit.co/c7b5cd7b8910cda734e165a2d2a9f2f4" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Nieuw bericht van website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://www.juwelierrobijn.nl/contact?success=true">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefoon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Onderwerp *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Bericht *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">Verstuur Bericht</button>
+                    </form>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light); text-align: center;">
+                        Of stuur direct een email naar: <a href="mailto:juwelier.robijn@gmail.com" style="color: var(--primary-color);">juwelier.robijn@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-section">
+        <div class="container">
+            <div class="buy-content" style="justify-content: center; text-align: center;">
+                <div class="buy-text">
+                    <h2>Goud Inkoop</h2>
+                    <p><strong>LEGITIMATIE IS VERPLICHT EN LEEFTIJD MOET 18+ ZIJN</strong></p>
+                    <p>Kom langs met uw goud voor een eerlijke taxatie en directe uitbetaling!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Juwelier Robijn</span>
+                    </div>
+                    <p>Al meer dan 40 jaar uw vertrouwde juwelier en goudsmid.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/juwelier.robijn" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/juwelierrobijn" target="_blank" aria-label="Snapchat">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                        <a href="https://tiktok.com/@juwelier.robijn.s" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/juwelier.robijn.3" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://youtube.com/@juwelierrobijn3081" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Snelle Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reparatie.html">Reparatie</a></li>
+                        <li><a href="sieraden.html">Sieraden</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Veelgestelde Vragen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Diensten</h4>
+                    <ul>
+                        <li><a href="reparatie.html">Reparaties</a></li>
+                        <li><a href="sieraden.html">Custom Sieraden</a></li>
+                        <li><a href="contact.html">Goud Inkoop</a></li>
+                        <li><a href="reparatie.html">Horloge Batterijen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:juwelier.robijn@gmail.com">juwelier.robijn@gmail.com</a>
+                        </li>
+                    </ul>
+                    <p class="footer-social-text">Volg ons op social media voor meer!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Juwelier Robijn en Goudsmid. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/script.js"></script>
+    <script>
+        // Contact Form Handling
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+        const submitBtn = document.getElementById('submit-btn');
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            // Dynamically set the return URL based on current location
+            const nextInput = document.querySelector('input[name="_next"]');
+            if (nextInput) {
+                // Get the current page URL and add success parameter
+                const currentUrl = window.location.origin + window.location.pathname + '?success=true';
+                nextInput.value = currentUrl;
+            }
+
+            // Check if the page was redirected back with success parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                // Show success message
+                formMessage.style.display = 'block';
+                formMessage.style.backgroundColor = '#d4edda';
+                formMessage.style.color = '#155724';
+                formMessage.style.border = '2px solid #c3e6cb';
+                formMessage.style.fontWeight = '500';
+                formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Bedankt! Uw bericht is succesvol verzonden. We nemen zo spoedig mogelijk contact met u op.';
+
+                // Scroll to the message
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Clear the form
+                if (contactForm) {
+                    contactForm.reset();
+                }
+
+                // Remove the success parameter from URL without reloading
+                const newUrl = window.location.pathname;
+                window.history.replaceState({}, document.title, newUrl);
+
+                // Auto-hide message after 10 seconds
+                setTimeout(function() {
+                    formMessage.style.opacity = '0';
+                    formMessage.style.transition = 'opacity 0.5s ease';
+                    setTimeout(function() {
+                        formMessage.style.display = 'none';
+                        formMessage.style.opacity = '1';
+                    }, 500);
+                }, 10000);
+            }
+        });
+
+        // Show loading state when form is submitted
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Verzenden...';
+
+                // Hide any existing messages
+                formMessage.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
+

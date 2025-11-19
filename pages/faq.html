@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veelgestelde vragen over Juwelier Robijn">
+    <title>FAQ - Juwelier Robijn</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .faq-list {
+            max-width: 900px;
+            margin: 3rem auto 0;
+        }
+        .faq-item {
+            background: var(--light-color);
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: transparent;
+            border: none;
+            text-align: left;
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/jr logo.jpg" alt="Juwelier Robijn Logo">
+                    <span>Juwelier Robijn</span>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reparatie.html">Reparatie</a></li>
+                <li><a href="sieraden.html">Sieraden</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Veelgestelde Vragen</h1>
+            <p>Alles wat u moet weten</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Hoelang duurt een reparatie?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Veel reparaties kunnen direct terwijl u wacht worden uitgevoerd. Voor complexere reparaties maken wij een inschatting en houden wij u op de hoogte. De meeste reparaties zijn binnen enkele dagen klaar.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kunnen jullie custom sieraden maken?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Ja! Onze ervaren goudsmeden kunnen sieraden naar uw eigen ontwerp maken. Van schets tot eindproduct begeleiden wij u in het hele proces. Maak een afspraak om uw ideeën te bespreken.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Wat zijn de vereisten voor goud inkoop?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Voor goud inkoop is legitimatie verplicht en u moet minimaal 18 jaar oud zijn. Wij taxeren uw goud eerlijk en betalen direct cash uit. Kom gerust langs voor een vrijblijvende taxatie.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vervangen jullie horloge batterijen?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Ja, wij vervangen horloge batterijen voor alle merken. Dit kan meestal direct terwijl u wacht. Kom gewoon langs met uw horloge.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kan ik mijn ring laten verkleinen of vergroten?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Zeker! Wij passen ringen professioneel aan naar uw maat. Dit geldt voor gouden en zilveren ringen. De aanpassing wordt vakkundig en onzichtbaar uitgevoerd.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bieden jullie garantie op reparaties?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Ja, op al onze reparaties geven wij garantie. De specifieke garantievoorwaarden bespreken wij bij het inleveren van uw sieraad.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kunnen jullie oude sieraden opnieuw polijsten?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absoluut! Wij kunnen uw oude sieraden weer als nieuw laten glimmen met onze professionele polijst- en reinigingsdiensten. Geef uw favoriete stukken een nieuw leven!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Hoeveel ervaring hebben jullie?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Juwelier Robijn heeft meer dan 40 jaar ervaring in het vak. Dit is ons familievak en wij zijn op jonge leeftijd begonnen. U kunt rekenen op vakmanschap en expertise.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kunnen jullie stenen zetten of vervangen?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Ja, wij kunnen losse of verloren stenen vakkundig en veilig zetten. Ook kunnen wij stenen vervangen of nieuwe stenen toevoegen aan uw sieraad.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Doen jullie ook graveren?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Ja, wij kunnen persoonlijke gravures aanbrengen op ringen, kettingen en andere sieraden. Perfect voor het personaliseren van geschenken of speciale momenten.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Heeft U Nog Vragen?</h2>
+            <p>Neem gerust contact met ons op. Wij helpen u graag verder!</p>
+            <a href="contact.html" class="btn btn-primary">Neem Contact Op</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Juwelier Robijn</span>
+                    </div>
+                    <p>Al meer dan 40 jaar uw vertrouwde juwelier en goudsmid.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/juwelier.robijn" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/juwelierrobijn" target="_blank" aria-label="Snapchat">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                        <a href="https://tiktok.com/@juwelier.robijn.s" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/juwelier.robijn.3" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://youtube.com/@juwelierrobijn3081" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Snelle Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reparatie.html">Reparatie</a></li>
+                        <li><a href="sieraden.html">Sieraden</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Veelgestelde Vragen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Diensten</h4>
+                    <ul>
+                        <li><a href="reparatie.html">Reparaties</a></li>
+                        <li><a href="sieraden.html">Custom Sieraden</a></li>
+                        <li><a href="contact.html">Goud Inkoop</a></li>
+                        <li><a href="reparatie.html">Horloge Batterijen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:juwelier.robijn@gmail.com">juwelier.robijn@gmail.com</a>
+                        </li>
+                    </ul>
+                    <p class="footer-social-text">Volg ons op social media voor meer!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Juwelier Robijn en Goudsmid. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/script.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
