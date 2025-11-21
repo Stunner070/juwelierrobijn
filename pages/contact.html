@@ -20,9 +20,10 @@
     <style>
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
             gap: 4rem;
             margin-top: 3rem;
+            align-items: flex-start;
         }
         .contact-info-card {
             background: var(--light-color);
@@ -44,6 +45,11 @@
             font-size: 1.5rem;
             color: var(--white);
             flex-shrink: 0;
+        }
+        .contact-info-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
         }
         .contact-form {
             background: var(--light-color);
@@ -163,11 +169,41 @@
 
                     <div class="contact-info-card">
                         <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Openingstijden</h3>
+                            <p style="margin-bottom: 0.5rem;"><strong>Maandag:</strong> 12:00–18:00</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Dinsdag:</strong> 10:00–18:00</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Woensdag:</strong> 10:00–18:00</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Donderdag:</strong> 10:00–20:00</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Vrijdag:</strong> 10:00–18:00</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Zaterdag:</strong> 10:00–18:00</p>
+                            <p><strong>Zondag:</strong> Gesloten</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-info-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:juwelier.robijn@gmail.com">juwelier.robijn@gmail.com</a></p>
+                            <h3>Email & Telefoon</h3>
+                            <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone" style="margin-right: 0.5rem;"></i><a href="tel:0703467873">070 346 7873</a></p>
+                            <p><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i><a href="mailto:juwelier.robijn@gmail.com">juwelier.robijn@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Adres</h3>
+                            <p>Wagenstraat 191, 2512 AW Den Haag</p>
+                            <div class="map-container" style="margin-top: 1rem;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4124.322469114425!2d4.316166788503368!3d52.073598290852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b79c18e6d395%3A0x9682e5bc6371f728!2sJuwelier%20Robijn%20en%20Goudsmid!5e0!3m2!1snl!2snl!4v1763745661187!5m2!1snl!2snl" width="400" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -177,36 +213,25 @@
                         </div>
                         <div class="contact-info-text">
                             <h3>Social Media</h3>
-                            <p>Volg ons op Instagram, TikTok, Facebook en YouTube</p>
+                            <p>Volg ons op onze sociale media kanalen</p>
+                            <div class="social-links" style="margin-top: 1rem; justify-content: flex-start;">
+                                <a href="https://instagram.com/juwelier.robijn" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.snapchat.com/add/juwelierrobijn" target="_blank" aria-label="Snapchat">
+                                    <i class="fab fa-snapchat"></i>
+                                </a>
+                                <a href="https://tiktok.com/@juwelier.robijn.s" target="_blank" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="https://www.facebook.com/juwelier.robijn.3" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://youtube.com/@juwelierrobijn3081" target="_blank" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-info-text">
-                            <h3>Openingstijden</h3>
-                            <p>Neem contact op voor actuele openingstijden</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links" style="margin-top: 2rem;">
-                        <a href="https://instagram.com/juwelier.robijn" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.snapchat.com/add/juwelierrobijn" target="_blank" aria-label="Snapchat">
-                            <i class="fab fa-snapchat"></i>
-                        </a>
-                        <a href="https://tiktok.com/@juwelier.robijn.s" target="_blank" aria-label="TikTok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.facebook.com/juwelier.robijn.3" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://youtube.com/@juwelierrobijn3081" target="_blank" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
                     </div>
                 </div>
 
@@ -392,4 +417,3 @@
     </script>
 </body>
 </html>
-
