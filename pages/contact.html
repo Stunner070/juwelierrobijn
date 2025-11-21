@@ -21,53 +21,53 @@
         .contact-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-            gap: 4rem;
+            gap: 3rem;
             margin-top: 3rem;
             align-items: flex-start;
         }
         .contact-info-card {
             background: var(--light-color);
-            padding: 2rem;
+            padding: 1.75rem;
             border-radius: 15px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
             display: flex;
-            align-items: center;
-            gap: 1.5rem;
+            align-items: flex-start;
+            gap: 1.25rem;
         }
         .contact-info-icon {
-            width: 60px;
-            height: 60px;
+            width: 52px;
+            height: 52px;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--white);
             flex-shrink: 0;
         }
         .contact-info-text h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--text-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
         }
         .contact-form {
             background: var(--light-color);
-            padding: 3rem;
+            padding: 2.5rem 2rem;
             border-radius: 20px;
         }
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
         }
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-weight: 500;
         }
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 1rem;
+            padding: 0.85rem 0.9rem;
             border: 2px solid var(--border-color);
             border-radius: 10px;
             font-family: var(--font-secondary);
@@ -80,7 +80,7 @@
         }
         .form-group textarea {
             resize: vertical;
-            min-height: 150px;
+            min-height: 130px;
         }
         #form-message {
             animation: slideIn 0.5s ease;
@@ -101,30 +101,57 @@
         }
         .contact-info .social-links {
             display: flex;
-            gap: 1rem;
-            justify-content: center;
+            gap: 0.75rem;
+            justify-content: flex-start;
+            flex-wrap: wrap;
         }
         .contact-info .social-links a {
-            width: 50px;
-            height: 50px;
+            width: 46px;
+            height: 46px;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             transition: var(--transition);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         .contact-info .social-links a:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
-        @media (max-width: 768px) {
+        .map-container iframe {
+            max-width: 100%;
+        }
+        @media (max-width: 900px) {
             .contact-grid {
                 grid-template-columns: 1fr;
+            }
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .contact-grid {
                 gap: 2rem;
+            }
+            .contact-info-card {
+                padding: 1.5rem;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .contact-info-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.1rem;
+            }
+            .contact-form {
+                padding: 1.75rem 1.25rem;
+            }
+            .contact-form h2 {
+                font-size: 1.4rem;
             }
         }
     </style>
